@@ -1,10 +1,10 @@
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
-import Register from './Components/register/Register';
+import Todo from './Components/todolist/todo/Todo';
 function App() {
   return (
     <div className="App">
-      <Register/>
+      <Todo/>
     </div>
   );
 }

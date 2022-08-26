@@ -1,0 +1,26 @@
+.todo{
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.todo_radio{
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    background-color: #ad02fe;
+    border: 1px solid #bf56ff;
+    cursor: pointer;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.todo_text{
+    
+}

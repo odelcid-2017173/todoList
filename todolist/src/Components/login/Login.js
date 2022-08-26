@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {Alert} from 'react-bootstrap'
-import Todo from '../todolist/Todo'
+import Todo from '../todolist/todo/Todo'
 
 function Login() {
     const [usernamelog, setUsernamelog] = useState("")
