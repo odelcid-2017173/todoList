@@ -1,57 +1,101 @@
+
+/*-----------------------------------------------------*/
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.App{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  html,body{
     background-color: #181824;
-}
-
-.App_Todo{
-    height: 28rem;
-    width: 28rem;
-}
-
-.App_input_wrapper{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 2.5rem;
-    background-color: #25273c;
-    border-radius: 15px;
+  }
+  
+  .wrapper{
+    max-width: 1200px;
+    height: auto;
+    margin: 30px auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  h3{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-and-todo-box{
+    width: 500px;
+    margin: auto;
+    height: auto;
+  }
+  
+  .form-and-todo-box .input-and-button{
+    height: 45px;
+    background-color: #fff;
     overflow: hidden;
-}
-
-.App_input{
-    flex: 1;
+    display: flex;
+  }
+  
+  .form-and-todo-box .input-and-button input{
+    width: 92%;
+    height: 100%;
     outline: none;
     border: none;
-    padding-right: 1rem;
-    font-size: 1rem;
-    background-color: transparent;
-    color: white;
-}
-
-.App_input_button{
-    width: 3rem;
+    text-indent: 2px;
+    font-size: 16px;
+    padding: 5px;
+    /* border: 2px solid #f92c0f; */
+  }
+  
+  .form-and-todo-box .input-and-button .button{
+    width: 8%;
     height: 100%;
-    background-color: #4ec032;
+    background-color: #f92c0f;
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: white;
+    align-items: center;
+    margin-top:-1px;
+  }
+  
+  .form-and-todo-box .input-and-button .button.edit{
+    width: auto;
+    padding: 0px 10px;
+  }
+  
+  .form-and-todo-box .input-and-button .button button{
+    outline: none;
     cursor: pointer;
-}
-
-.App_todo_list{
-    background-color: #25273c;
-    height: 100%;
-    margin-top: 2rem;
-    overflow: auto;
-}
+    border: 2px solid #f92c0f;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .todo{
+    margin: 15px 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+  }
+  
+  .todo input{
+    margin-right: 5px;
+  }
+  
+  .todo span{
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .todo .edit-and-delete{
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .delete-all{
+    padding: 10px;
+    cursor: pointer;
+  }
